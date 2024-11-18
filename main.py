@@ -12,7 +12,7 @@ class Admin (User):
         self.adm_account = {}
 
     def add_user (self):
-        self.adm_account[self.name]="User account"
+        self.adm_account[self.name] = 'User account'
         print(f"{self.name} got an account")
 
     def remove_user(self):
@@ -21,7 +21,19 @@ class Admin (User):
             print(f"{self.name} was removed from the list")
         else:
             print(f"{self.name}is not found in the list")
-user1 = User( 137, "Smith", "137A")
+
+
+admin1 = Admin(14,"Thomas", "AB14","Admin14")
+admin2 =Admin(18,"Wolfram","BC18", "Admin18")
+
+user1 = User("17","Ivan","useraccount1")
+
+admin1.add_user()
+admin2.add_user()
+
+
+
+
 
 
 
